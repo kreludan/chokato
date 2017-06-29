@@ -31,12 +31,12 @@ Note that a few of the dailies included (Apple Bobbing and the Deserted Tomb) ca
 
 ## To-Do List
 
+Looks like it's not working for the Fruit Machine. Fix before working on adding the others.
+
 There are a few more dailies the script should also visit---
 * Tombola
 * The Snowager
 * The Advent Calendar
 * Potentially Trudy's Surprise and/or the Qasalan Expellibox?
-
-Also not entirely sure that the Fruit Machine is working. Make sure to double check that, among other things
 
 Given that some of the dailies can also be detrimental at times, it'd be nice to let people choose which ones they want. That might take some more work, though.
