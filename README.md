@@ -4,7 +4,7 @@ Collects a variety of free dailies from Neopets.
 ## Installation
 First you'll need a userscript manager in order to install the userscript --- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) if you're using Chrome, or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for Firefox.
 
-Once that's done, just click [here](https://github.com/vokrum/neopets-dailiesGrabber/blob/master/neopets-dailies-grabber.user.js) to install.
+Once that's done, just click [here](https://github.com/vokrum/neopets-dailiesGrabber/raw/master/neopets-dailies-grabber.user.js) to install.
 
 ## Usage
 
@@ -36,5 +36,7 @@ There are a few more dailies the script should also visit---
 * The Snowager
 * The Advent Calendar
 * Potentially Trudy's Surprise and/or the Qasalan Expellibox?
+
+Also not entirely sure that the Fruit Machine is working. Make sure to double check that, among other things
 
 Given that some of the dailies can also be detrimental at times, it'd be nice to let people choose which ones they want. That might take some more work, though.
