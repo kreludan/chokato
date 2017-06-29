@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name Neopets dailiesGrabber
+// @name Neopets Dailies Grabber
 // @author Vikram Kohli
 // @description Grabs your dailies for you on www.neopets.com upon visiting the site! Dailies included are the Giant Omelette and Jelly, Bank Interest, Anchor Management,
 // the Fruit Machine, the Coltzan Shrine, Underwater Fishing, the Grundo Plushie, the Healing Fairie, the Shop of Offers Slorg, Monthly Freebies, Apple Bobbing and the Deserted Tomb. 
 // Upon completion the script brings you to your inventory so you can peruse your newly acquired loot.
-// @version 1.2
+// @version 1.3
 // @match http://www.neopets.com/*
 // @require http://code.jquery.com/jquery-3.2.1.js
 // ==/UserScript==
@@ -33,7 +33,7 @@ function main()
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/fruit/index.phtml")
 	{
-		ColtzanShrine();
+		setTimeout(ColtzanShrine, 10000);
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/shrine.phtml")
 	{
