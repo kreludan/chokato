@@ -2,7 +2,7 @@
 Collects a variety of free dailies from Neopets. 
 
 ## Installation
-First you'll need a userscript manager in order to install the userscript --- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) if you're using Chrome, or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for Firefox.
+First you'll need a userscript manager in order to install --- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) if you're using Chrome, or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for Firefox.
 
 Once that's done, just click [here](https://github.com/vokrum/neopets-dailiesGrabber/raw/master/neopets-dailies-grabber.user.js) to install.
 
