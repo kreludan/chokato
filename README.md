@@ -13,7 +13,6 @@ The script should now run from the start once you visit http://www.neopets.com.
 It should grab the following dailies---
 * Giant Omelette
 * Giant Jelly
-* Interest from the Neopian Bank
 * Coltzan's Shrine
 * Underwater Fishing
 * The Blue Grundo Plushie
@@ -29,7 +28,12 @@ Note that a few of the dailies included (Apple Bobbing and the Deserted Tomb) ca
 
 ## To-Do List
 
-Looks like it's presently not working for the Fruit Machine or Anchor Management. Fix before working on adding the others.
+Fixes for the following:
+* Fruit Machine
+* Anchor Management
+* Neopian Bank Interest
+
+Underwater Fishing can be done for each pet every day. Currently the script only fishes with your currently active pet; need to get it to do so for all four. 
 
 There are a few more dailies the script should also visit---
 * Tombola

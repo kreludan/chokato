@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name Neopets Dailies Grabber
 // @author Vikram Kohli
-// @description Grabs your dailies for you on www.neopets.com upon visiting the site! Dailies included are the Giant Omelette and Jelly, Bank Interest, Coltzan's Shrine,
+// @description Grabs your dailies for you on www.neopets.com upon visiting the site! Dailies included are the Giant Omelette and Jelly, Coltzan's Shrine,
 // Underwater Fishing, the Grundo Plushie, the Healing Fairie, the Shop of Offers Slorg, Monthly Freebies, Apple Bobbing and the Deserted Tomb.
 // Upon completion the script brings you to your inventory so you can peruse your newly acquired loot.
-// @version 1.4
+// @version 1.5
 // @match http://www.neopets.com/*
 // @require http://code.jquery.com/jquery-3.2.1.js
 // ==/UserScript==
@@ -13,59 +13,59 @@ function main()
 {
 	if (window.location.href==="http://www.neopets.com/" || window.location.href==="http://www.neopets.com/index.phtml")
 	{
-		GiantOmelette();
+		setTimeout(GiantOmelette, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/prehistoric/omelette.phtml")
 	{
-		GiantJelly();
+		setTimeout(GiantJelly, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/jelly/jelly.phtml")
 	{
-		BankInterest();
+		setTimeout(BankInterest, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/bank.phtml")
 	{
-		AnchorManagement();
+		setTimeout(AnchorManagement, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/pirates/anchormanagement.phtml")
 	{
-		FruitMachine();
+		setTimeout(FruitMachine, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/fruit/index.phtml")
 	{
-		ColtzanShrine();
+		setTimeout(ColtzanShrine, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/shrine.phtml")
 	{
-		UnderwaterFishing();
+		setTimeout(UnderwaterFishing, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/water/fishing.phtml")
 	{
-		TDMBGPOP();
+		setTimeout(TDMBGPOP, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/faerieland/tdmbgpop.phtml")
 	{
-		HealingSprings();
+		setTimeout(HealingSprings, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/faerieland/springs.phtml")
 	{
-		ShopOfOffers();
+		setTimeout(ShopOfOffers, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/shop_of_offers.phtml")
 	{
-		MonthlyFreebies();
+		setTimeout(MonthlyFreebies, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/freebies/index.phtml")
 	{
-		AppleBobbing();
+		setTimeout(AppleBobbing, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/halloween/applebobbing.phtml?bobbing=1")
 	{
-		DesertedTomb();
+		setTimeout(DesertedTomb, 3000);
 	}
 	else if (window.location.href==="http://www.neopets.com/worlds/geraptiku/process_tomb.phtml")
 	{
-		Inventory();
+		setTimeout(Inventory, 3000);
 	}
 }
 
@@ -86,28 +86,25 @@ function post(action, params)  // Based on https://stackoverflow.com/a/133997
 	form.submit();
 }
 
-// Fruit Machine is still not working. Attempted to fix based on Slim advice but Alas... Basis of the issue is that the form for the fruit machine has two inputs: "spin", which always has
-// a value for 1, and "ck", which likely has a random value based on the ID of the player. So the issue then becomes how to append a form to the page which has the correct value for "ck."
-// Tried to resolve this using a selector to find the input with attribute "submit" and then clicking it, but this apparently was ineffective.
+// METHODS TO FIX
 
 function FruitMachine()
 {
 	window.location.href="/desert/fruit/index.phtml";
-	if(window.location.href==="/desert/fruit/index.phtml")
-	{
-		document.querySelector('input[type=submit][value="Spin, spin, spin!"]').form.submit();
-	}
+	document.querySelector('input[type=submit][value="Spin, spin, spin!"]').form.submit();
 }
-
-// Moving Anchor Management up here as well since the same issue will ostensibly apply to it. Finding a fix for Fruit Machine should also resolve this issue, though.
 
 function AnchorManagement()
 {
 	post('/pirates/anchormanagement.phtml', {action: '4349a14eee27c508e6c290519b55a1e5'});
 }
 
+function BankInterest()
+{
+	post('/bank.phtml', {type: 'interest'});
+}
 
-
+// WORKING
 
 function GiantOmelette()
 {
@@ -119,10 +116,7 @@ function GiantJelly()
 	post('/jelly/jelly.phtml', {type: 'get_jelly'});
 }
 
-function BankInterest()
-{
-	post('/bank.phtml', {type: 'interest'});
-}
+
 
 function ColtzanShrine()
 {
@@ -146,7 +140,7 @@ function HealingSprings()
 
 function ShopOfOffers()
 {
-	window.location.href="/shop_of_offers.phtml";
+	window.location.href="/shop_of_offers.phtml?slorg_payout=yes";
 }
 
 function MonthlyFreebies()
