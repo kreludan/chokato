@@ -14,8 +14,6 @@ It should grab the following dailies---
 * Giant Omelette
 * Giant Jelly
 * Interest from the Neopian Bank
-* Anchor Management
-* The Fruit Machine
 * Coltzan's Shrine
 * Underwater Fishing
 * The Blue Grundo Plushie
@@ -31,7 +29,7 @@ Note that a few of the dailies included (Apple Bobbing and the Deserted Tomb) ca
 
 ## To-Do List
 
-Looks like it's not working for the Fruit Machine. Fix before working on adding the others.
+Looks like it's presently not working for the Fruit Machine or Anchor Management. Fix before working on adding the others.
 
 There are a few more dailies the script should also visit---
 * Tombola
