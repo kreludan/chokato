@@ -2,7 +2,7 @@
 // @name Neopets Dailies Grabber
 // @author Vikram Kohli
 // @description Grabs your dailies for you on www.neopets.com upon visiting the site! Dailies included are the Giant Omelette and Jelly, Bank Interest, Anchor Management,
-// the Fruit Machine, the Coltzan Shrine, Underwater Fishing, the Grundo Plushie, the Healing Fairie, the Shop of Offers Slorg, Monthly Freebies, Apple Bobbing and the Deserted Tomb. 
+// the Fruit Machine, Coltzan's Shrine, Underwater Fishing, the Grundo Plushie, the Healing Fairie, the Shop of Offers Slorg, Monthly Freebies, Apple Bobbing and the Deserted Tomb. 
 // Upon completion the script brings you to your inventory so you can peruse your newly acquired loot.
 // @version 1.3
 // @match http://www.neopets.com/*
@@ -33,7 +33,7 @@ function main()
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/fruit/index.phtml")
 	{
-		setTimeout(ColtzanShrine, 10000);
+		ColtzanShrine();
 	}
 	else if (window.location.href==="http://www.neopets.com/desert/shrine.phtml")
 	{
@@ -63,7 +63,7 @@ function main()
 	{
 		DesertedTomb();
 	}
-	else if (window.location.href==="/worlds/geraptiku/process_tomb.phtml")
+	else if (window.location.href==="http://www.neopets.com/worlds/geraptiku/process_tomb.phtml")
 	{
 		Inventory();
 	}
@@ -106,9 +106,12 @@ function AnchorManagement()
 	post('/pirates/anchormanagement.phtml', {action: '4349a14eee27c508e6c290519b55a1e5'});
 }
 
-function FruitMachine()
+function FruitMachine()  
 {
-	post('/desert/fruit/index.phtml', {spin: '1', ck: 'dbe23e3b80639cd871525c26c8fa807d'});
+	window.location.href="/desert/fruit/index.phtml";  // Putting this here as filler so the rest of the script runs fine. Basis of the issue is that 
+	// The form for the fruit machine has two inputs: "spin", which always has a value for 1, and "ck", which ostensibly has a random value based on the 
+	// ID of the player. So the issue then becomes how to append a form to the page which has the correct value for "ck." How to do this I am not entirely sure
+	// So for now I am just Confused And Sad |': Will continue the Search For Answers at some point.
 }
 
 function ColtzanShrine()

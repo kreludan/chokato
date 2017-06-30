@@ -37,6 +37,7 @@ There are a few more dailies the script should also visit---
 * Tombola
 * The Snowager
 * The Advent Calendar
+* Kreludan Meteor
 * Potentially Trudy's Surprise and/or the Qasalan Expellibox?
 
 Given that some of the dailies can also be detrimental at times, it'd be nice to let people choose which ones they want. That might take some more work, though.
