@@ -86,7 +86,7 @@ function post(action, params)  // Based on https://stackoverflow.com/a/133997
 	form.submit();
 }
 
-// METHODS TO FIX
+// TO FIX
 
 function FruitMachine()
 {
@@ -115,8 +115,6 @@ function GiantJelly()
 {
 	post('/jelly/jelly.phtml', {type: 'get_jelly'});
 }
-
-
 
 function ColtzanShrine()
 {
