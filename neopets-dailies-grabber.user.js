@@ -51,7 +51,7 @@ function main()
 	{
 		setTimeout(ShopOfOffers, 3000);
 	}
-	else if (window.location.href==="http://www.neopets.com/shop_of_offers.phtml")
+	else if (window.location.href==="http://www.neopets.com/shop_of_offers.phtml?slorg_payout=yes")
 	{
 		setTimeout(MonthlyFreebies, 3000);
 	}
