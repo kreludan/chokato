@@ -1,9 +1,9 @@
 # Chokato
-Google Chrome extension which collects a variety of free dailies from Neopets. 
+Chrome extension which collects a variety of free dailies from Neopets. 
 
 ## Installation
 
-[[Update this section with a link to the published application on the Chrome web store!]] ;A;
+[[Update this section with a link to the published extension on the Chrome web store!]] ;A;
 
 ## Usage
 
