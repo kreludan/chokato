@@ -1,14 +1,13 @@
-# Neopets Dailies Grabber
-Collects a variety of free dailies from Neopets. 
+# Chokato
+Google Chrome extension which collects a variety of free dailies from Neopets. 
 
 ## Installation
-First you'll need a userscript manager in order to install --- [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) if you're using Chrome, or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) for Firefox.
 
-Once that's done, just click [here](https://github.com/vokrum/neopets-dailiesGrabber/raw/master/neopets-dailies-grabber.user.js) to install.
+[[Update this section with a link to the published application on the Chrome web store! ;A;
 
 ## Usage
 
-The script should now run from the start once you visit http://www.neopets.com.
+The extension should now run from the start once you visit http://www.neopets.com.
 
 It should grab the following dailies---
 * Giant Omelette
