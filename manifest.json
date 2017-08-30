@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "content_scripts": [{
+        "exclude_globs":    [  ],
+        "include_globs":    [ "*" ],
+        "js":               [ "chokato.user.js" ],
+        "matches":          [   "http://www.neopets.com/*",
+                                "http://www.neopets.com/*"
+                            ]
+    }],
+    "converted_from_user_script": true,
+    "description":  "Grabs dailies from neopets.com upon visiting the site and returns to inventory",
+    "name":         "Chokato",
+    "version":      "0.1"
+}

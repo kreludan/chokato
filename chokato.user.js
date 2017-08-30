@@ -1,10 +1,8 @@
 // ==UserScript==
-// @name Neopets Dailies Grabber
+// @name Chokato
 // @author Vikram Kohli
-// @description Grabs your dailies for you on www.neopets.com upon visiting the site! Dailies included are the Giant Omelette and Jelly, Coltzan's Shrine,
-// Underwater Fishing, the Grundo Plushie, the Healing Fairie, the Shop of Offers Slorg, Monthly Freebies, Apple Bobbing and the Deserted Tomb.
-// Upon completion the script brings you to your inventory so you can peruse your newly acquired loot.
-// @version 1.5
+// @description Grabs dailies from neopets.com upon visiting the site and returns to inventory.
+// @version 0.1
 // @match http://www.neopets.com/*
 // @require http://code.jquery.com/jquery-3.2.1.js
 // ==/UserScript==
