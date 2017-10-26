@@ -3,7 +3,7 @@ Chrome extension which collects a variety of free dailies from Neopets.
 
 ## Installation
 
-[[Update this section with a link to the published extension on the Chrome web store!]] ;A;
+The app can be found on the [Chrome Web Store](https://chrome.google.com/webstore/detail/chokato/jmilhjapknjfojghfjplhmoikmmcnbfp?hl=en-US). It's still not done, so you can enable/disable it on the Chrome [extensions](chrome://extensions/) page.
 
 ## Usage
 
