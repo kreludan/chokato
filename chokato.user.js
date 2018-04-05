@@ -7,6 +7,10 @@
 // @require http://code.jquery.com/jquery-3.2.1.js
 // ==/UserScript==
 
+
+
+// document.getElementById("form-fire-cannon")[0].getAttribute("value") REMEMBER THIS IT WORKS AAAAA
+
 function main()
 {
 	if (window.location.href==="http://www.neopets.com/" || window.location.href==="http://www.neopets.com/index.phtml")
